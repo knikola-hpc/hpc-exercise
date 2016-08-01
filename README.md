@@ -4,7 +4,7 @@ Implement web-application for uploading multiple files. After uploading files on
 
 Specification
 -------------
-- files should not be bigger than e.g. 1MB
+- files should not be bigger than e.g. 1MB (there's also validation using JavaScript on the client-side, which might not be supported in all browsers - but there's also server-side validation after file is uploaded)
 - system should be smart NOT to overwrite already existing files with the same name
 - in such case, files should be organized in sub-folders structure
 - web application should follow style / formatting from http://www.briefbutler.at
@@ -32,6 +32,7 @@ Notes
 - **web.service.default.port** - by default set to *8082* (needs to be not used port in order to run server / client)
 - **default.upload.path** - by default set to */home/nikola/Desktop/hpc* (needs to be a valid path in file system, otherwise upload of files will not be possible - system performs validation)
 - building as well running tests is possible from command line using Maven (mvn clean install)
+- after running client application (e.g. http://localhost:8082/client/), you should be forwarded to the default page -> please follow link "**Goto file upload**" for going to "**upload**" page
 
 Additional Notes
 ----------------
