@@ -11,7 +11,7 @@ Specification
 
 Technical requirements
 ----------------------
-- Application needs to run in Tomcat (no other strict requirement, therefore following frameworks were used):
+- Application needs to run on Tomcat (no other strict requirement, therefore following frameworks were used):
 - web-service implementd using Apache CXF
 - as a web-framework Struts was used
 - for service layer and web-service consumer Spring was used
