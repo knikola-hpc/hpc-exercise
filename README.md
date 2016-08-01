@@ -4,9 +4,9 @@ Implement web-application for uploading multiple files. After uploading files on
 
 Specification
 -------------
-- files should not be bigger that e.g. 1MB
+- files should not be bigger than e.g. 1MB
 - system should be smart NOT to overwrite already existing files with the same name
-- storing files with the same name should be organized in sub-folders structure
+- in such case, files should be organized in sub-folders structure
 - web application should follow style / formatting from http://www.briefbutler.at
 
 Technical requirements
