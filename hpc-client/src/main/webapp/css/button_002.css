@@ -1,0 +1,175 @@
+/******************************** BUTTON GREY - START ********************************/
+a.button
+{
+	background: transparent url('../images/buttons/but_grey_l.png') no-repeat top left;
+	float:left;
+	display: block;	
+	font: normal 13px Verdana; /* Change 13px as desired */	
+	line-height: 12px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+	height: 20px; /* Height of button background height */
+	padding-left: 6px; /* Width of left menu image */
+	margin-right:2px;
+	margin-left:2px;
+	text-decoration: none;
+	
+	/*border:1px solid yellow;*/
+}
+
+a:link.button, a:visited.button, a:active.button
+{
+	color: #FFFFFF; /*button text color*/	
+}
+
+a.button span
+{
+	background: transparent url('../images/buttons/but_grey_r.png') no-repeat top right;
+	display: block;
+	padding: 3px 10px 5px 4px; /*Set 11px below to match value of 'padding-left' value above TOP,RIGHT,BOTTOM,LEFT*/
+}
+
+a.button:hover
+{ 
+	/* Hover state CSS */
+	background-position: bottom left;
+}
+
+a.button:hover span
+{ 
+	/* Hover state CSS */
+	background-position: bottom right;
+	color: #FFFFFF;
+}
+
+.button img
+{
+    margin-top:1px;
+    margin-bottom:-1px;
+    height:11px;
+}
+/******************************** BUTTON GREY - END ********************************/
+
+/******************************** BUTTON GREEN - START ********************************/
+a.button_green
+{
+	background: transparent url('../images/buttons/but_green_l.png') no-repeat top left;
+	float:left;
+	display: block;	
+	font: normal 13px Verdana; /* Change 13px as desired */	
+	line-height: 12px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+	height: 20px; /* Height of button background height */
+	padding-left: 6px; /* Width of left menu image */
+	margin-right:2px;
+	margin-left:2px;
+	text-decoration: none;
+	
+	/*border:1px solid yellow;*/
+}
+
+a:link.button_green, a:visited.button_green, a:active.button_green
+{
+	color: #FFFFFF; /*button text color*/	
+}
+
+a.button_green span
+{
+	background: transparent url('../images/buttons/but_green_r.png') no-repeat top right;
+	display: block;
+	padding: 3px 10px 5px 4px; /*Set 11px below to match value of 'padding-left' value above TOP,RIGHT,BOTTOM,LEFT*/
+}
+
+a.button_green:hover
+{ 
+	/* Hover state CSS */
+	background-position: bottom left;
+}
+
+a.button_green:hover span
+{ 
+	/* Hover state CSS */
+	background-position: bottom right;
+	color: #FFFFFF;
+}
+
+.button_green img
+{
+    margin-top:1px;
+    margin-bottom:-1px;
+    height:11px;
+}
+/******************************** BUTTON GREEN - END ********************************/
+
+/******************************** BUTTON RED - START ********************************/
+a.button_red
+{
+	background: transparent url('../images/but_red_l.png') no-repeat top left;
+	float:left;
+	display: block;	
+	font: normal 13px Verdana; /* Change 13px as desired */	
+	line-height: 12px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+	height: 20px; /* Height of button background height */
+	padding-left: 6px; /* Width of left menu image */
+	margin-right:2px;
+	margin-left:2px;
+	text-decoration: none;
+	
+	/*border:1px solid yellow;*/
+}
+
+a:link.button_red, a:visited.button_red, a:active.button_red
+{
+	color: #FFFFFF; /*button text color*/	
+}
+
+a.button_red span
+{
+	background: transparent url('../images/buttons/but_red_r.png') no-repeat top right;
+	display: block;
+	padding: 3px 10px 5px 4px; /*Set 11px below to match value of 'padding-left' value above TOP,RIGHT,BOTTOM,LEFT*/
+}
+
+a.button_red:hover
+{ 
+	/* Hover state CSS */
+	background-position: bottom left;
+}
+
+a.button_red:hover span
+{ 
+	/* Hover state CSS */
+	background-position: bottom right;
+	color: #FFFFFF;
+}
+
+.button_red img
+{
+    margin-top:1px;
+    margin-bottom:-1px;
+    height:11px;
+}
+/******************************** BUTTON RED - END ********************************/
+
+
+.centerme
+{
+	/*border: 1px solid red;*/
+	display:table;	
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.rightme
+{
+	/*border: 1px solid red;*/
+	display:table;	
+	margin-left: auto;
+	margin-right: 0;	
+	padding:0;
+}
+
+.leftme
+{
+	/*border: 1px solid red;*/
+	display:table;	
+	margin-left: 0;
+	margin-right: auto;	
+}

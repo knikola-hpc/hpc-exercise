@@ -1,0 +1,11 @@
+.ui-datepicker-trigger
+{
+        padding:0px;
+        padding-left:2px;
+        vertical-align:baseline;
+
+        position:relative;
+        top:2px;
+       
+        cursor: pointer;
+}

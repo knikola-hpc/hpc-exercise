@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder location="classpath:application.properties"/>
+    <context:annotation-config/>
+
+    <bean id="consumerService" class="com.hpc.service.consumer.ConsumerServiceImpl">
+        <property name="defaultPath" value="${default.path}" />
+    </bean>
+
+    <bean id="proxyFactory" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">
+        <property name="serviceClass" value="com.hpc.ws.api.IFileService"/>
+        <property name="address" value="${web.service.endpoint}"/>
+    </bean>
+
+    <bean id="client" factory-bean="proxyFactory" factory-method="create"/>
+
+    <!--<jaxws:client id="clientFactory"
+                  serviceClass="com.hpc.ws.api.IFileService"
+                  address="${web.service.endpoint}" />-->
+</beans>

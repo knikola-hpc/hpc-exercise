@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.hpc</groupId>
+        <artifactId>hpc-upload-files</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>hpc-server</artifactId>
+    <version>1.0</version>
+    <packaging>war</packaging>
+
+    <name>hpc-server</name>
+    <url>http://maven.apache.org</url>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.hpc</groupId>
+            <artifactId>hpc-ws-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <finalName>server</finalName>
+
+        <plugins>
+            <!--definition of Jetty plugin responsible for startup in order to run integration tests-->
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty-maven-plugin.version}</version>
+                <configuration>
+                    <stopPort>8006</stopPort>
+                    <stopKey>STOP</stopKey>
+                    <daemon>true</daemon>
+                    <webApp>
+                        <contextPath>/server</contextPath>
+                    </webApp>
+                    <httpConnector>
+                        <port>${web.service.default.port}</port>
+                    </httpConnector>
+
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>start-jetty</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>start</goal>
+                        </goals>
+                    </execution>
+                    <!--<execution>
+                        <id>stop-jetty</id>
+                        <phase>post-integration-test</phase>
+                        <goals>
+                            <goal>stop</goal>
+                        </goals>
+                    </execution>-->
+                </executions>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>

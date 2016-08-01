@@ -1,0 +1,51 @@
+/******************************** BUTTON - START ********************************/
+a.public_button
+{
+	background: transparent url('../images/public/button_left.png') no-repeat top left;
+	float:left;
+	display: block;	
+	font: normal 10px Verdana; /* Change 13px as desired */	
+	line-height: 25px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+	height: 37px; /* Height of button background height */
+	padding-left: 27px; /* Width of left menu image */
+	margin-right:2px;
+	margin-left:2px;
+	text-decoration: none;
+	
+	/*border:1px solid yellow;*/
+}
+
+a:link.public_button, a:visited.public_button, a:active.public_button
+{
+	color: #000000; /*button text color*/
+	font-weight:bold;
+}
+
+a.public_button span
+{
+	background: transparent url('../images/public/button_right.png') no-repeat top right;
+	display: block;
+	padding: 0px 18px 12px 0px; /*Set 11px below to match value of 'padding-left' value above TOP,RIGHT,BOTTOM,LEFT*/
+	white-space:nowrap;
+}
+
+a.public_button:hover
+{ 
+	/* Hover state CSS */
+	background-position: bottom left;
+}
+
+a.public_button:hover span
+{ 
+	/* Hover state CSS */
+	background-position: bottom right;
+	color: #000000;
+}
+
+.public_button img
+{
+    margin-top:1px;
+    margin-bottom:-1px;
+    height:11px;
+}
+/******************************** BUTTON - END ********************************/

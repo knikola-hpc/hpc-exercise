@@ -1,0 +1,22 @@
+.groupbox_title
+{    
+    background-color: #BECBD0;
+    color:#324651;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight:bold;  
+    padding: 5px;        
+    padding-left:10px;
+    padding-right:10px;
+    float:left;    
+}
+
+
+
+.groupbox_body
+{
+    background-color: #D5DDE1;
+    border: 1px solid #BECBD0;
+    width:100%;
+}
+

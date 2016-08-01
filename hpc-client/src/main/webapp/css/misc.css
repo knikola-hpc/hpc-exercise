@@ -1,0 +1,45 @@
+
+
+.iconselector img
+{
+	border:0px;
+}
+
+.iconselector td:hover
+{
+	background-color:#d3e0e6;
+}
+
+
+.iconselector td
+{
+	width:30px;
+	height:30px;
+	text-align:center;
+}
+
+.mediaselector
+{
+    color: #425D69;
+}
+
+.mediaselector img
+{
+	border:0px;
+}
+
+.mediaselector td:hover
+{
+	background-color:#FBC98E;
+}
+
+
+.mediaselector td
+{
+	width:30px;
+	height:30px;
+	text-align:center;
+    background-color:#B6CCD6;
+     border:1px solid white;
+    
+}

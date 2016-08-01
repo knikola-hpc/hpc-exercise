@@ -1,0 +1,57 @@
+
+table
+{
+    width:100%;
+}
+
+.datatable
+{
+    background-color: #D5DDE1;
+    border-collapse:   collapse;
+    border-spacing:    0;
+	width:100%;
+	font-family: Verdana;
+	font-size: 12px;    
+}
+
+.datatable tr
+{	
+	border-bottom:1px solid #ECF0F2;
+    height:27px;
+}
+
+.datatable tr.last,.datatable tr:last-child
+{	
+	border:0;
+    height:27px;
+}
+
+.datatable th
+{		
+	text-align:	left;	
+	font-weight:bold;
+    width:auto;
+}
+
+.datatable td
+{		
+	text-align:	left;	
+	font-weight:normal;	
+}
+
+.datatable th, .datatable td
+{
+	padding-left:5px;
+}
+
+.datatable th.split
+{
+	border-right: 1px solid #ECF0F2;
+}
+
+.datatable td.split
+{
+	border-right: 1px solid #ECF0F2;
+}
+
+

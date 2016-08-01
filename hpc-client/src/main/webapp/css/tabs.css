@@ -1,0 +1,85 @@
+ul.tabs
+{
+    margin:0;
+    padding:0;
+}
+
+ul.tabs li
+{
+    display:block;
+    float:left;    
+}
+
+ul.tabs li a
+{
+	background: transparent url('../images/tabs/unselected_l.png') no-repeat top left;	
+    display:block;
+    float:left;
+	
+	font-family: Verdana;
+    font-size:13px;
+	font-weight: normal;    	
+    color:#324651;	
+    text-decoration:none;
+	
+	line-height: 21px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 24px) */
+	height: 27px; /* Height of button background height */
+	
+	padding:0; /* RESET */
+	padding-left: 9px; /* Width of left menu image */
+}
+
+ul.tabs li a > span
+{
+	background: transparent url('../images/tabs/unselected_r.png') no-repeat top right;
+	display: block;
+	padding: 3px 11px 3px 0px; /*Set 11px below to match value of 'padding-left' value above*/
+}
+
+
+ul.tabs li a:hover
+{
+    background-position: bottom left;
+}
+
+ul.tabs li a > span:hover
+{
+    background-position: bottom right;
+}
+
+
+.selected 
+{    		
+	color:#324651 !important;
+	background: transparent url('../images/tabs/selected_l.png') no-repeat top left !important;
+}
+
+.selected > span
+{    		
+	color:#324651 !important;
+	background: transparent url('../images/tabs/selected_r.png') no-repeat top right !important;
+}
+
+.disabled 
+{    		
+	color:#324651 !important;
+	background: transparent url('../images/tabs/disabled_l.png') no-repeat top left !important;
+}
+
+.disabled > span
+{    		
+	color:#324651 !important;
+	background: transparent url('../images/tabs/disabled_r.png') no-repeat top right !important;
+}
+
+
+.tab-content
+{
+	background-color: #D5DDE1;
+    border:1px solid #BECBD0;
+    clear:both;
+
+        padding: 5px;        
+    padding-left:10px;
+    padding-right:10px;
+}
