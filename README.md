@@ -31,7 +31,7 @@ Notes
 - following properties should be setup in order to be able to start application - in root pom.xml (hpc-upload-files):
 - **web.service.default.port** - by default set to *8082* (needs to be not used port in order to run server / client)
 - **default.upload.path** - by default set to */home/nikola/Desktop/hpc* (needs to be a valid path in file system, otherwise upload of files will not be possible - system performs validation)
-- building as well running test is possible from command line using Maven (mvn clean install)
+- building as well running tests is possible from command line using Maven (mvn clean install)
 
 Additional Notes
 ----------------
