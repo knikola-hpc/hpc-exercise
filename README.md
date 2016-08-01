@@ -22,7 +22,7 @@ Implementation Notes
 Project implemented in a following way:
 - server web module - basically dummy application used for providing / deploying web-service endpoint
 - client application - implemented using Struts, contains web-service client code, and Spring consumer's service (as well as junit and integration tests)
-- shared WS API (hpc-ws-api)
+- shared WS API (hpc-ws-api) - meant to be used also for providing model classes for displaying a tree after files upload (unfortunatelly this part is not completed - although not explicitly requested)
 
 Notes
 ----------------
